@@ -9,7 +9,7 @@ public class Boss extends GameEntity{
 
     Weapon weapon=new Weapon();
     public String printlninfo(){
-        return "Здоровье Босса: "+ getHealth()+"\nУрон Босса: "+getDamage()+weapon.getNameOfWeapon()+weapon.getTypeOfWeapon("Стрелковое");
+        return "Здоровье Босса: "+ getHealth()+"\nУрон Босса: "+getDamage()+"\nОружие Босса: "+weapon.getNameOfWeapon()+"\nТип оружия:"+weapon.getTypeOfWeapon("Стрелковое");
     }
 
 }

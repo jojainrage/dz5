@@ -3,7 +3,9 @@ public class Main {
         Boss boss= new Boss();
         boss.setHealth(200);
         boss.setDamage(20);
-        System.out.println("Здоровье Босса: "+ boss.getHealth()+"\nУрон Босса: "+boss.getDamage());
+        boss.weapon.setNameOfWeapon("Клэймор");
+        boss.weapon.setTypeOfWeapon("Оружие ближнего боя");
+        System.out.println();
         Skeleton skeleton1=new Skeleton();
         skeleton1.setHealth(100);
         skeleton1.setDamage(10);
@@ -16,7 +18,24 @@ public class Main {
         skeleton2.setAmountOfArrows(12);
         skeleton1.weapon.setTypeOfWeapon("Стрелковое");
         skeleton2.weapon.setTypeOfWeapon("Стрелковое");
+        System.out.println(boss.printlninfo());
         System.out.println(skeleton1.printlninfo());
         System.out.println(skeleton2.printlninfo());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Привет сенсей!
